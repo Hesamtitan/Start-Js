@@ -29,30 +29,45 @@
 // ________________________________________;
 //if
 
-let age = 20;
+// let age = 20;
 
-if (age > 30) {
-  console.log("Old");
-}
-if (age < 30) {
-  console.log("Young");
+// if (age > 30) {
+//   console.log("Old");
+// }
+// if (age < 30) {
+//   console.log("Young");
+// }
+
+// let validEmail = false;
+// let ValidPassword = true;
+
+// if (validEmail && ValidPassword) {
+//   console.log("Your sing in");
+// } else if (validEmail || ValidPassword) {
+//   console.log("your email or password incorrect");
+// }
+
+// let isUser = false;
+// let userRole = "admin";
+// if (isUser) {
+//   console.log("Wellcome User");
+// } else if (userRole === "admin") {
+//   console.log("Wellcome admin");
+// } else {
+//   console.log("Wellcome");
+// }
+// __________________________________________
+
+// Scope
+let firstName = "hesam";
+if (true) {
+  let lastName = "behnami";
+  console.log(lastName);
+  if (true) {
+    let age = 30;
+    console.log(age);
+  }
 }
 
-let validEmail = false;
-let ValidPassword = true;
-
-if (validEmail && ValidPassword) {
-  console.log("Your sing in");
-} else if (validEmail || ValidPassword) {
-  console.log("your email or password incorrect");
-}
-
-let isUser = false;
-let userRole = "admin";
-if (isUser) {
-  console.log("Wellcome User");
-} else if (userRole === "admin") {
-  console.log("Wellcome admin");
-} else {
-  console.log("Wellcome");
-}
+console.log(firstName);
+_____________________________________________
