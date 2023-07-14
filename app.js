@@ -73,20 +73,37 @@
 // _____________________________________________
 //function
 
-let message = function () {
-  console.log("welcome");
-};
-message();
+// let message = function () {
+//   console.log("welcome");
+// };
+// message();
 
-let userId = function (id) {
-  console.log(id);
-};
-userId(10);
+// let userId = function (id) {
+//   console.log(id);
+// };
+// userId(10);
 
-let userId2 = function (id) {
-  let res = "uesr ID : " + id;
+// let userId2 = function (id) {
+//   let res = "uesr ID : " + id;
+//   return res;
+// };
+
+// let showresult = userId2(5);
+// console.log(showresult);
+// ________________________________________________
+//arguments - default - parameters
+
+let sum = function (a, b, c) {
+  let res = (a / b) * c;
+  return res;
+};
+let showresult = sum(10, 2, 3);
+console.log(showresult);
+
+let sum2 = function (a = 10, b = 2) {
+  let res = a + b;
   return res;
 };
 
-let showresult = userId2(5);
-console.log(showresult);
+let showresult2 = sum2(1,2);
+console.log(showresult2);
