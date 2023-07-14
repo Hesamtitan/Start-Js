@@ -59,15 +59,34 @@
 // __________________________________________
 
 // Scope
-let firstName = "hesam";
-if (true) {
-  let lastName = "behnami";
-  console.log(lastName);
-  if (true) {
-    let age = 30;
-    console.log(age);
-  }
-}
+// let firstName = "hesam";
+// if (true) {
+//   let lastName = "behnami";
+//   console.log(lastName);
+//   if (true) {
+//     let age = 30;
+//     console.log(age);
+//   }
+// }
 
-console.log(firstName);
-_____________________________________________
+// console.log(firstName);
+// _____________________________________________
+//function
+
+let message = function () {
+  console.log("welcome");
+};
+message();
+
+let userId = function (id) {
+  console.log(id);
+};
+userId(10);
+
+let userId2 = function (id) {
+  let res = "uesr ID : " + id;
+  return res;
+};
+
+let showresult = userId2(5);
+console.log(showresult);
