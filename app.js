@@ -105,5 +105,5 @@ let sum2 = function (a = 10, b = 2) {
   return res;
 };
 
-let showresult2 = sum2(1,2);
+let showresult2 = sum2(1, 2);
 console.log(showresult2);
