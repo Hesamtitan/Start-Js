@@ -93,17 +93,24 @@
 // ________________________________________________
 //arguments - default - parameters
 
-let sum = function (a, b, c) {
-  let res = (a / b) * c;
-  return res;
-};
-let showresult = sum(10, 2, 3);
-console.log(showresult);
+// let sum = function (a, b, c) {
+//   let res = (a / b) * c;
+//   return res;
+// };
+// let showresult = sum(10, 2, 3);
+// console.log(showresult);
 
-let sum2 = function (a = 10, b = 2) {
-  let res = a + b;
-  return res;
-};
+// let sum2 = function (a = 5, b = 1) {
+//   let res = a + b;
+//   return res;
+// };
 
-let showresult2 = sum2(1, 2);
-console.log(showresult2);
+// let showresult2 = sum2(10 + 10);
+// console.log(showresult2);
+// ___________________________________________________
+
+//template string
+
+let userInfo = function (name, id) {
+  return``
+};
