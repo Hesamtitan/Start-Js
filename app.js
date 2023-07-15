@@ -130,23 +130,35 @@
 // console.log(showresult1);
 // ------------------------------------------------------
 //objects
-let userInfo1 = {
-  userId: 1,
-  userName: "hesam",
-  role: "admin",
-};
+// let userInfo1 = {
+//   userId: 1,
+//   userName: "hesam",
+//   role: "admin",
+// };
 
-let userInfo2 = {
-  userId: 2,
-  userName: "Arash",
-  role: "owner",
-};
+// let userInfo2 = {
+//   userId: 2,
+//   userName: "Arash",
+//   role: "owner",
+// };
 
-let result = function (detect,detect2) {
-  console.log(` ${detect.userId} ${detect.userName} ${detect.role}
-  
- ${detect2.userId} ${detect2.userName} ${detect2.role}`);
-};
+// let result = function (detect,detect2) {
+//   console.log(` ${detect.userId} ${detect.userName} ${detect.role}
 
-result(userInfo1,userInfo2);
+//  ${detect2.userId} ${detect2.userName} ${detect2.role}`);
+// };
+
+// result(userInfo1,userInfo2);
 //____________________________________________________________________
+//10-object-methods
+
+let cours = {
+  studentLimit: 30,
+  studentCount: 11,
+  sum: function (res) {
+    let surplus = this.studentLimit - this.studentCount;
+    // console.log(this.studentLimit - this.studentCount);
+  },
+};
+
+cours.sum();
