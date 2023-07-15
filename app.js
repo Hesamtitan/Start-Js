@@ -111,20 +111,42 @@
 
 //template string
 
-let userInfo = function (name, id) {
-  return `${name}  ${id}`;
+// let userInfo = function (name, id) {
+//   return `${name}  ${id}`;
+// };
+
+// let showresult = userInfo("hesam", 12);
+// console.log(showresult);
+// // or
+
+// let userInfo1 = function (name, id) {
+//   return `
+//   ${(name = "hesam")}
+
+//    ${(id = 12)}`;
+// };
+
+// let showresult1 = userInfo1();
+// console.log(showresult1);
+// ------------------------------------------------------
+//objects
+let userInfo1 = {
+  userId: 1,
+  userName: "hesam",
+  role: "admin",
 };
 
-let showresult = userInfo("hesam", 12);
-console.log(showresult);
-// or
-
-let userInfo1 = function (name, id) {
-  return `
-  ${(name = "hesam")} 
-
-   ${(id = 12)}`;
+let userInfo2 = {
+  userId: 2,
+  userName: "Arash",
+  role: "owner",
 };
 
-let showresult1 = userInfo1();
-console.log(showresult1);
+let result = function (detect,detect2) {
+  console.log(` ${detect.userId} ${detect.userName} ${detect.role}
+  
+ ${detect2.userId} ${detect2.userName} ${detect2.role}`);
+};
+
+result(userInfo1,userInfo2);
+//____________________________________________________________________
