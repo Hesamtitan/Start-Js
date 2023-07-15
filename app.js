@@ -112,5 +112,19 @@
 //template string
 
 let userInfo = function (name, id) {
-  return``
+  return `${name}  ${id}`;
 };
+
+let showresult = userInfo("hesam", 12);
+console.log(showresult);
+// or
+
+let userInfo1 = function (name, id) {
+  return `
+  ${(name = "hesam")} 
+
+   ${(id = 12)}`;
+};
+
+let showresult1 = userInfo1();
+console.log(showresult1);
