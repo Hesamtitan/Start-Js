@@ -156,8 +156,8 @@ let cours = {
   studentLimit: 30,
   studentCount: 11,
   sum: function (res) {
-    let surplus = this.studentLimit - this.studentCount;
-    // console.log(this.studentLimit - this.studentCount);
+    // let surplus = this.studentLimit - this.studentCount;
+    console.log(this.studentLimit - this.studentCount);
   },
 };
 
