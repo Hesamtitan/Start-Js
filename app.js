@@ -155,16 +155,11 @@
 //____________________________________________________________________
 //10-object-methods
 
-// let cours = {
-//   studentLimit: 30,
-//   studentCount: 11,
-//   sum: function (res) {
-//     let surplus = this.studentLimit - this.studentCount;
-//     // console.log(this.studentLimit - this.studentCount);
-//   },
-// };
-
-// cours.sum();{}
-let functions = function () {
-  s;
+let cours = {
+  studentLimit: 30,
+  studentCount: 11,
+  sum: function (res) {
+    let surplus = this.studentLimit - this.studentCount;
+    // console.log(this.studentLimit - this.studentCount);
+  },
 };
