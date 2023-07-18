@@ -151,15 +151,58 @@
 // result(userInfo1,userInfo2);
 //____________________________________________________________________
 //09.challenge
+let hesam = {
+  outgo: 0,
+  income: 0,
+};
+
+let addOutgo = function (account, amount) {
+  account.outgo = account.outgo + amount;
+};
+
+let addIncom = function (account, income) {
+  account.income = account.income + income;
+};
+
+let data = function (account) {
+  let balance = account.income - account.outgo;
+  return balance;
+};
+
+addIncom(hesam, 50000);
+addOutgo(hesam, 43285);
+
+console.log(data(hesam));
 
 //____________________________________________________________________
 //10-object-methods
 
-let cours = {
-  studentLimit: 30,
-  studentCount: 11,
-  sum: function (res) {
-    let surplus = this.studentLimit - this.studentCount;
-    // console.log(this.studentLimit - this.studentCount);
-  },
-};
+// let cours = {
+//   studentLimit: 30,
+//   studentCount: 11,
+//   sum: function (res) {
+//     let surplus = this.studentLimit - this.studentCount;
+//     // console.log(this.studentLimit - this.studentCount);
+//   },
+// };
+
+// let sandogh = {
+//   daramad: 424,
+//   hazine: 70,
+// };
+
+// let adddaramad = function (hesab) {
+//   console.log(`${hesab.daramad}`);
+// };
+
+// let addhazine = function (hesab) {
+//   console.log(`${hesab.hazine}`);
+// };
+
+// let mandehesab = function () {
+//   let balance = adddaramad - addhazine;
+// };
+
+// adddaramad(sandogh);
+// addhazine(sandogh);
+// console.log(mandehesab);
