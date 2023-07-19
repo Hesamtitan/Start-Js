@@ -214,12 +214,39 @@
 //____________________________________________________________________
 // 11-string-methods
 
-let fullName = "  Hesam_titan  ";
-console.log(fullName.length);
-console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
-console.log(fullName.includes("Hesam"));
-console.log(fullName.includes("titan"));
-console.log(fullName.includes(12345));
-console.log(fullName.trim());
+// let fullName = "  Hesam_titan  ";
+// console.log(fullName.length);
+// console.log(fullName.toUpperCase());
+// console.log(fullName.toLowerCase());
+// console.log(fullName.includes("Hesam"));
+// console.log(fullName.includes("titan"));
+// console.log(fullName.includes(12345));
+// console.log(fullName.trim());
 
+//____________________________________________________________________
+
+//12-challenge-02
+
+//let userName = "hesam_titan";
+
+//let password = "hesam12345";
+// let password2 = "hesam11111";
+
+// console.log(password.length > 8);
+// console.log(password.includes('12345'))
+// console.log(password2.includes('12345'))
+//-------------------- khodam neveshtam UP ^^^
+
+let validPassword = function (password) {
+  if (password.length > 8 && !password.includes("12345")) {
+    console.log("you are sing in");
+    return true;
+  } else {
+    console.log("your password have problem");
+    return false;
+  }
+};
+console.log(validPassword("aswxx"));
+console.log(validPassword("hesam12"));
+console.log(validPassword("hesam12345"));
+console.log(validPassword("hesam30298"));
