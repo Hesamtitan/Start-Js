@@ -150,34 +150,39 @@
 
 // result(userInfo1,userInfo2);
 //____________________________________________________________________
-//09.challenge
-let hesam = {
-  outgo: 0,
-  income: 0,
-};
+//09.challenge   (tavabbe & objects)
+// let hesam = {
+//   outgo: 0,
+//   income: 0,
+// };
 
-let addOutgo = function (account, amount) {
-  account.outgo = account.outgo + amount;
-};
+// //outgo
+// let addOutgo = function (account, outgo) {
+//   account.outgo = account.outgo + outgo;
+// };
 
-let addIncom = function (account, income) {
-  account.income = account.income + income;
-};
+// //income
+// let addIncom = function (account, income) {
+//   account.income = account.income + income;
+// };
 
-let data = function (account) {
-  let balance = account.income - account.outgo;
-  return balance;
-};
+// //mohasebe
+// let data = function (account) {
+//   let balance = account.income - account.outgo;
+//   return balance;
+// };
 
-addIncom(hesam, 50000);
-addOutgo(hesam, 43285);
+// //user,income
+// addIncom(hesam, 50000);
+// //user,outgo
+// addOutgo(hesam, 43285);
 
-console.log(data(hesam));
+// console.log(data(hesam));
 
 //____________________________________________________________________
 //10-object-methods
 
-// let cours = {
+// let course = {
 //   studentLimit: 30,
 //   studentCount: 11,
 //   sum: function (res) {
@@ -206,3 +211,15 @@ console.log(data(hesam));
 // adddaramad(sandogh);
 // addhazine(sandogh);
 // console.log(mandehesab);
+//____________________________________________________________________
+// 11-string-methods
+
+let fullName = "  Hesam_titan  ";
+console.log(fullName.length);
+console.log(fullName.toUpperCase());
+console.log(fullName.toLowerCase());
+console.log(fullName.includes("Hesam"));
+console.log(fullName.includes("titan"));
+console.log(fullName.includes(12345));
+console.log(fullName.trim());
+
