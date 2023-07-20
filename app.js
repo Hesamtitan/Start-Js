@@ -253,24 +253,37 @@
 //____________________________________________________________________
 // 13-number - methods
 
-let num = 12.593;
-let res = num.toFixed(1);
-// let res = num.toFixed(2);
-// let res = num.toFixed(5);
-console.log(res);
+// let num = 12.593;
+// let res = num.toFixed(1);
+// // let res = num.toFixed(2);
+// // let res = num.toFixed(5);
+// console.log(res);
 
-console.log(Math.round(num));
-console.log(Math.floor(num));
-console.log(Math.ceil(num));
-console.log(Math.random(num));
+// console.log(Math.round(num));
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num));
+// console.log(Math.random(num));
 
-// let randomNum = Math.random();
+// // let randomNum = Math.random();
+// // console.log(randomNum);
+
+// let num1 = 10;
+// let num2 = 20;
+
+// let randomNum = Math.ceil(Math.random() * (num2 - num1)) + num1;
 // console.log(randomNum);
 
-let num1 = 10;
-let num2 = 20;
+//____________________________________________________________________
+// 14-constant
 
-let randomNum = Math.ceil(Math.random() * (num2 - num1)) + num1;
-console.log(randomNum);
+const fullName = "hesam";
+console.log(fullName);
 
-
+const userInfo = {
+  id: 2,
+};
+// userId={
+//     id:21
+// }
+userInfo.id = 218;
+console.log(userInfo);
