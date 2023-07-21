@@ -276,14 +276,38 @@
 //____________________________________________________________________
 // 14-constant
 
-const fullName = "hesam";
-console.log(fullName);
+// const fullName = "hesam";
+// console.log(fullName);
 
-const userInfo = {
-  id: 2,
-};
-// userId={
-//     id:21
-// }
-userInfo.id = 218;
-console.log(userInfo);
+// const userInfo = {
+//   id: 2,
+// };
+// // userId={
+// //     id:21
+// // }
+// userInfo.id = 218;
+// console.log(userInfo);
+//____________________________________________________________________
+// 15-array
+const tasks = ["task1", "tsak2", "task3", 4, true, false];
+
+console.log(tasks.length );
+
+const buybasket = ["mobile", "loptop", "mobile cover", "power bank"];
+
+let result = `you have ${buybasket.length} iteam in your basket`;
+let firstIteam = `your first iteam ${buybasket[0]}`;
+let lastIteam = `and your last iteam is ${buybasket[buybasket.length - 1]}`;
+
+console.log(result);
+console.log(firstIteam);
+console.log(lastIteam);
+
+const cartItems = ["book1", "book2", "book3"];
+
+let res = `Total buy = ${cartItems.length}`;
+
+let res2 = `first Item = ${cartItems[0]}and last itme is = ${cartItems[cartItems.length - 1]}`;
+console.log(res);
+console.log(res2);
+//____________________________________________________________________
