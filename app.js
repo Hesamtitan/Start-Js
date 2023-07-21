@@ -289,25 +289,37 @@
 // console.log(userInfo);
 //____________________________________________________________________
 // 15-array
-const tasks = ["task1", "tsak2", "task3", 4, true, false];
+// const tasks = ["task1", "tsak2", "task3", 4, true, false];
 
-console.log(tasks.length );
+// console.log(tasks.length );
 
-const buybasket = ["mobile", "loptop", "mobile cover", "power bank"];
+// const buybasket = ["mobile", "loptop", "mobile cover", "power bank"];
 
-let result = `you have ${buybasket.length} iteam in your basket`;
-let firstIteam = `your first iteam ${buybasket[0]}`;
-let lastIteam = `and your last iteam is ${buybasket[buybasket.length - 1]}`;
+// let result = `you have ${buybasket.length} iteam in your basket`;
+// let firstIteam = `your first iteam ${buybasket[0]}`;
+// let lastIteam = `and your last iteam is ${buybasket[buybasket.length - 1]}`;
 
-console.log(result);
-console.log(firstIteam);
-console.log(lastIteam);
+// console.log(result);
+// console.log(firstIteam);
+// console.log(lastIteam);
 
-const cartItems = ["book1", "book2", "book3"];
+// const cartItems = ["book1", "book2", "book3"];
 
-let res = `Total buy = ${cartItems.length}`;
+// let res = `Total buy = ${cartItems.length}`;
 
-let res2 = `first Item = ${cartItems[0]}and last itme is = ${cartItems[cartItems.length - 1]}`;
-console.log(res);
-console.log(res2);
+// let res2 = `first Item = ${cartItems[0]}and last itme is = ${cartItems[cartItems.length - 1]}`;
+// console.log(res);
+// console.log(res2);
 //____________________________________________________________________
+
+// 16-array-methods
+
+const cartItems = ["book1", "book2", "book3", "book4"];
+
+cartItems.push("book5", 12, true);
+cartItems.pop();
+cartItems.unshift(true, false, "mobile");
+cartItems.splice(0,2)
+cartItems.splice(0, 1);
+cartItems[2] = "new";
+console.log(cartItems);
