@@ -342,13 +342,23 @@
 //2.add new item
 //3.show resulte and array products
 
+// const cartItems = ["Book1", "Book2", "Book3", "Book4"];
+
+// cartItems.shift();
+// cartItems.splice(1, 1);
+// cartItems.push("mobile");
+// cartItems.forEach(function (name, index) {
+//   let num = index + 1;
+//   console.log(`${num} product name is : ${name}`);
+// });
+//____________________________________________________________________
+// 19-for-loop
 const cartItems = ["Book1", "Book2", "Book3", "Book4"];
 
-cartItems.shift();
-cartItems.splice(1, 1);
-cartItems.push("mobile");
-cartItems.forEach(function (name, index) {
-  let num = index + 1;
-  console.log(`${num} product name is : ${name}`);
-});
- 
+for (let count = 0; count < cartItems.length; count++) {
+  const num = count + 1;
+  const productName = cartItems[count];
+  console.log(`${num} product ${productName}`);
+  // console.log(`${num} product ${cartItems[count]}`);
+
+}
