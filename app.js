@@ -353,12 +353,19 @@
 // });
 //____________________________________________________________________
 // 19-for-loop
-const cartItems = ["Book1", "Book2", "Book3", "Book4"];
+// const cartItems = ["Book1", "Book2", "Book3", "Book4"];
 
-for (let count = 0; count < cartItems.length; count++) {
-  const num = count + 1;
-  const productName = cartItems[count];
-  console.log(`${num} product ${productName}`);
-  // console.log(`${num} product ${cartItems[count]}`);
+// for (let count = 0; count < cartItems.length; count++) {
+//   const num = count + 1;
+//   const productName = cartItems[count];
+//   console.log(`${num} product ${productName}`);
+//   // console.log(`${num} product ${cartItems[count]}`);
 
-}
+// }
+//____________________________________________________________________
+
+// 20-indexOf-method
+
+const cartItems = ["Book1", "Book2", "Book3", "Book4", "Book2"];
+
+console.log(cartItems.indexOf("Book2"));
