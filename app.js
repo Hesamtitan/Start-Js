@@ -337,8 +337,12 @@
 // });
 //____________________________________________________________________
 // 18-challeng --03
-const cartItems = ["book1", "book2", "book3", "book4"];
 
+//1.remove first and third 'item' (book3)
+//2.add new item
+//3.show resulte and array products
+
+const cartItems = ["Book1", "Book2", "Book3", "Book4"];
 
 cartItems.shift();
 cartItems.splice(1, 1);
@@ -347,3 +351,4 @@ cartItems.forEach(function (name, index) {
   let num = index + 1;
   console.log(`${num} product name is : ${name}`);
 });
+ 
