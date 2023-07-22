@@ -329,9 +329,21 @@
 //____________________________________________________________________
 // 17-foreach-method
 
+// const cartItems = ["book1", "book2", "book3", "book4"];
+
+// cartItems.forEach(function (abc, efg) {
+//   console.log(abc);
+//   console.log(efg);
+// });
+//____________________________________________________________________
+// 18-challeng --03
 const cartItems = ["book1", "book2", "book3", "book4"];
 
-cartItems.forEach(function (abc, efg) {
-  console.log(abc);
-  console.log(efg);
+
+cartItems.shift();
+cartItems.splice(1, 1);
+cartItems.push("mobile");
+cartItems.forEach(function (name, index) {
+  let num = index + 1;
+  console.log(`${num} product name is : ${name}`);
 });
