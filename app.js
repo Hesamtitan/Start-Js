@@ -314,12 +314,24 @@
 
 // 16-array-methods
 
+// const cartItems = ["book1", "book2", "book3", "book4"];
+// const cartItems2 = ["book5", "book6", "book7", "book8"];
+// const addad = [1,2,3,4]
+
+// // cartItems.push("book5", 12, true);
+// // cartItems.pop();
+// // cartItems.unshift(true, false, "mobile");
+// // cartItems.splice(0,2)
+// // cartItems.splice(0, 1);
+// // cartItems[2] = "new";
+// // cartItems.copyWithin(1, 3);
+// console.log();
+//____________________________________________________________________
+// 17-foreach-method
+
 const cartItems = ["book1", "book2", "book3", "book4"];
 
-cartItems.push("book5", 12, true);
-cartItems.pop();
-cartItems.unshift(true, false, "mobile");
-cartItems.splice(0,2)
-cartItems.splice(0, 1);
-cartItems[2] = "new";
-console.log(cartItems);
+cartItems.forEach(function (abc, efg) {
+  console.log(abc);
+  console.log(efg);
+});
