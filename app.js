@@ -366,6 +366,34 @@
 
 // 20-indexOf-method
 
-const cartItems = ["Book1", "Book2", "Book3", "Book4", "Book2"];
+// const cartItems = ["Book1", "Book2", "Book3", "Book4", "Book2"];
 
-console.log(cartItems.indexOf("Book2"));
+// console.log(cartItems.indexOf("Book2"));
+//____________________________________________________________________
+
+// 21-findindex-method
+
+const cartItems = [
+  {
+    title: "BOok1",
+    price: 29,
+  },
+  {
+    title: "Book2",
+    price: 59,
+  },
+  {
+    title: "Book3",
+    price: 79,
+  },
+];
+
+const findProuducts = function (cart, titles) {
+  const indexValue = cart.findIndex(function (item, index) {
+    return item.title.toLowerCase() === titles.toLowerCase();
+  });
+  return cart[indexValue];
+};
+
+const result = findProuducts(cartItems, "book3");
+console.log(result);
