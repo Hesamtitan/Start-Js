@@ -373,6 +373,34 @@
 
 // 21-findindex-method
 
+// const cartItems = [
+//   {
+//     title: "BOok1",
+//     price: 29,
+//   },
+//   {
+//     title: "Book2",
+//     price: 59,
+//   },
+//   {
+//     title: "Book3",
+//     price: 79,
+//   },
+// ];
+
+// const findProuducts = function (cart, titles) {
+//   const indexValue = cart.findIndex(function (item, index) {
+//     return item.title.toLowerCase() === titles.toLowerCase();
+//   });
+//   return cart[indexValue];
+// };
+
+// const result = findProuducts(cartItems, "book3");
+// console.log(result);
+
+//____________________________________________________________________
+// 22-find-method
+
 const cartItems = [
   {
     title: "BOok1",
@@ -389,10 +417,9 @@ const cartItems = [
 ];
 
 const findProuducts = function (cart, titles) {
-  const indexValue = cart.findIndex(function (item, index) {
+  return cart.find(function (item) {
     return item.title.toLowerCase() === titles.toLowerCase();
   });
-  return cart[indexValue];
 };
 
 const result = findProuducts(cartItems, "book3");
